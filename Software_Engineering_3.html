@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>SOFTWARE ENGINEERING ASSIGNMENT 3</h2>
+<p>The assignment: The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?</p>
+
+<button onclick="myFunction()">The Answer</button>
+<p id="button"></p>
+
+<script>
+var text = "";
+var n = 600851475143;
+var i = 2;
+
+
+while (i<=n){
+    if (n%i == 0){
+        n/=i;    
+    }else{
+        i++;
+    }
+}
+
+text += "<br>The highest prime factor is " + i;
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = document.write(text);
+}
+
+</script>
+</body>
+</html>
